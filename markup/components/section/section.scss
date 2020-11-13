@@ -1,0 +1,47 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    margin-right:20px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+
+.section__title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+.button_1 + .button_2 {
+    margin-left: 9px;
+}
+
+.button_1 {
+    cursor: pointer;
+}
+
+.button_2 {
+    cursor: pointer;
+}
+.section__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section__header-img-first {
+    margin-top: 25px;
+}
+.section__header-cards {
+    margin: 0 -15px;
+}
+.section__header-card {
+    margin-right: 20px;
+    padding: 0 15px;
+}
+.section__header-image{
+    border-radius: 10px;
+}
+.section__header-card:last-child {
+    margin-right: 0px;
+}

@@ -1,0 +1,22 @@
+.section__header-more a {
+    display: block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #FFDD66;
+    margin-top: 45px;
+    text-align: center;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+.section__header-more a:hover {
+    background-color: gold;
+}
+
+.section__header-more {
+    max-width: 200px;
+    margin: 0 auto;
+}
