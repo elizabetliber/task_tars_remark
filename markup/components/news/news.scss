@@ -17,21 +17,33 @@
 .news__item {
     margin-top: 25px;
 }
+
 .section__body {
     margin-top: 40px;
     display: flex;
     max-width: 100%;
     flex-direction: row;
 }
+
 .section__body-image {
     max-width: 100%;
-    //border-radius: 10px;
 }
+
 .section__body-images {
     margin-right: 25px;
     border-radius: 10px;
     flex: 1;
 }
+
+.section__header-img-second {
+    display: none;
+}
+
+.section__header-image {
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
 @media (max-width: 320px) {
     .section__body {
         flex-direction: column;
@@ -57,3 +69,4 @@
         margin-bottom: 15px;
     }
 }
+

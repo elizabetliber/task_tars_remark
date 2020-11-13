@@ -1,6 +1,7 @@
 <!doctype html>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<script src="https://code.jquery.com/jquery-1.11.0.min.js" integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"
+        integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <html class="no-js" lang="ru">
@@ -11,37 +12,31 @@
 
 <body>
 %=symbols=%
-<div class="section__header">
-    {{> section/section section.title}}
-</div>
-<buttonMore>
-    {{> buttonMore/buttonMore buttonMore.title}}
-</buttonMore>
 
-<news>
-    {{> news/news}}
-</news>
+{{> section/section section.title}}
+{{> buttonMore/buttonMore buttonMore.title}}
+{{> news/news}}
 
 
 <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
 <script>svg4everybody();</script>
 
 <script type="text/javascript">
-    $(document).ready(function(){
-        $('.section__header-card').slick({
-            dots: true,
-            infinite: false,
+    $(document).ready(function () {
+        $('.section__header-cards').slick({
+            dots: false,
+            infinite: true,
             speed: 300,
             slidesToShow: 3,
             slidesToScroll: 1,
+            prevArrow: '.button_1',
+            nextArrow: '.button_2',
             responsive: [
                 {
                     breakpoint: 1440,
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
                     }
                 },
                 {
@@ -52,7 +47,7 @@
                     }
                 },
                 {
-                    breakpoint: 320,
+                    breakpoint: 321,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
@@ -60,7 +55,7 @@
                 }
 
             ]
-    });
+        });
     });
 </script>
 </body>
