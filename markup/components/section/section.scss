@@ -40,6 +40,7 @@ body {
 
 .section__header-image {
     border-radius: 10px;
+    width: 100%;
 }
 
 .section__header-card:last-child {
@@ -54,3 +55,6 @@ body {
     margin: 0 -10px;
 }
 
+.section__header-text {
+    margin-top: 20px;
+}
